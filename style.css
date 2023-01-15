@@ -1,0 +1,143 @@
+
+/* logo on the main */
+#logo{
+    width: 5%;
+}
+
+/*/////////////////////////////////////////////////////////////////// top part */
+
+/* background photo with blue cover for top part */
+
+.upper_part{
+background:url(./pic/gaming-pc-truro.jpg);
+background-size: cover;
+background-position: center;
+display: flex;
+position: relative;
+    
+}
+
+
+.upper_part_opt {  
+    background: rgba(79, 120, 255, 0.8);   
+}
+
+/* controling left part of top part */
+.main_headline{
+    padding: 5%;
+    color: white;
+}
+
+/* controling right part of top part */
+
+/* modifying the contect box */
+.contect_box{
+    padding: 1%;
+    text-align: left;
+    color: white;
+    background-color: rgba(130, 155, 236, 0.8);;
+}
+.inside_contect_box{
+    margin: 3%;
+}
+
+/* modifying the buttons of the top part */
+.sub_button{
+    margin-top: 4%;
+    margin-left: 0;
+    width: 100%;
+    background-color: orange;
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+/* making the phone button disappear until needed in phone mode */
+.hidden_button{
+    display: none;
+}
+
+/* responsive font for the text below the button */
+h7{
+    font-size: 1vw;  
+}
+
+/* making the input bar at responsive size */
+
+input {
+    width: 100%;
+  }
+
+/*/////////////////////////////////////////////////////////////////// middle part */
+
+/* contoling the size of img inside the card making them all the same size and responsive */
+.card img {
+    width: 15%;
+}
+
+/* centering text inside the card and giving them padding */
+.card{
+    text-align: center;
+    padding: 3%;
+}
+
+/*/////////////////////////////////////////////////////////////////// bottom part */
+
+/* contoling the size of bottom img and making it round */
+#portrait_pic{
+    width: 15% ;
+    border-radius: 50% ;
+    padding: 3%;
+}
+
+/* background photo with gray cover for bottom part */
+
+.lower_part{
+    margin-top: 2%;
+    text-align: center;
+    background:url(./pic/noreturntooffice.webp);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    position: relative; 
+}
+
+.lower_part_opt {  
+    background: rgba(220, 228, 255, 0.9);   
+    background-size: cover;
+    background-position: center;
+    
+}
+
+/* Text alignment to the center of the bottom part*/
+#text_low{
+    padding-left : 25%;
+    padding-right: 25%;
+}
+
+
+/* change needed to phone size */
+@media screen and (max-width: 700px) {
+    /* reposition logo in the center */
+    #logo{
+        margin: auto;
+        width: 10%;
+    }
+
+    /* responsive font for the text below the button on the top part */
+    h7{
+        font-size: 2vw;
+    }
+    /* reposition text of the top part in the center */
+    .main_headline{
+        text-align: center;
+    }
+
+    /* making the phone button visible */
+    .hidden_button{
+        display: block;
+    }
+  }
+
